@@ -14,8 +14,6 @@
 body{
 	color: #fff;
   background-color: #000;
-	background-image: url("../images/logo.png");
-	background-position: top left;
 	/* padding para que o conteudo nao fique em baixo da side bar*/
 	padding: 0 24% 0 4%;
 	font-family: 'Quicksand', sans-serif;
@@ -137,7 +135,7 @@ p {
 	margin-bottom: 10px;
 }
 .social:hover {
-	transition: all ease .4s;
+	transition: all ease .5s;
 	transform: rotate(30deg);
 }
 /* icons social network */
