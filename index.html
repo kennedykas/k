@@ -6,21 +6,55 @@
     <meta name="description" content="Portifólio de Kennedy Alves" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta name="theme-color" content="#2c3e50">
-    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="js/prefix.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="images/icon.ico" rel="shortcut icon"/>
+    <link href="images/icons/icon.ico" rel="shortcut icon"/>
   </head>
   <body>
-    <section id='index'>
-      <div class='indexContent presentation'>
-        <h3>Olá! Meu nome é Kennedy Alves de Souza, tenho 19 anos, sou solteiro, moro com os meus pais em São Mateus. Sou uma pessoa pessoa calma com facilidade de relacionamento interpessoal, sempre cultivei muitas amizades, gosto e tenho facilidade em aprender coisas novas.</h3>
+
+    <!-- particulas -->
+    <div id="particles-js"></div>
+
+
+
+    <!-- hamburguer menu -->
+    <div class="open">
+      <span class="cls"></span>
+      <span>
+        <ul class="sub-menu">
+          <li><a href="#habilidades" title="habilidades">Habilidades / Skills</a></li>
+          <li><a href="#about" title="sobre">Sobre / About</a></li>
+          <li><a href="#contact" title="contato">Contato / Contact</a></li>
+          <li><a href="#jobs" title="trabalhos">Trabalhos / Jobs</a></li>
+          <li><a href="#gallery" title="galeria">Galeria / Gallery</a></li>
+        </ul>
+      </span>
+      <span class="cls"></span>
+    </div>
+
+
+
+
+    <!-- home section -->
+    <section id="index">
+      <h1 id="indexTitle">Hi, I'm Kennedy, web developer!</h1>
+      <div id="advantages">
+        <span class="list">ONE PAGE</span>
+        <span class="list">BEM DOCUMENTADO</span>
+        <span class="list">ATUALIZAÇÕES E SUPORTE GRATUITO</span>
       </div>
-      <div class='indexContent profilePhoto'>
-        <img src="images/eu.png" class='image' alt="Kennedy"/>
+    </section>
+
+
+
+    <!-- skills -->
+    <section id='habilidades'>
+      <div id='habilidadesText' class="content">
+        <h1>Habilidades e experiência</h1>
+        <h4>A maior parte do meu trabalho é front end: HTML5&hearts;, CSS3, JQUERY, codificando layouts, aplicações de pagina única.</h4>
+        <h4>Mas eu também faço o backend com JAVA, PHP/MYSQL, utilizando o padrão MVC. O que eu realmente gosto de fazer é desenvolver para web.</h4>
       </div>
-      <div class='indexContent habilidades'>
+      <div id="skills" class='content'>
         <h4>Minhas habilidades:<h4><br/>
         <p>HTML5</p>
         <progress value="95" max="100"></progress><br/>
@@ -43,48 +77,59 @@
       </div>
     </section>
 
-    <nav id='sideBar'>
-      <a class='sideBarOption cv' title='Curriculum Vitae' href="#curriculum">Curriculum</a>
-      <a class='sideBarOption myProjects' title='My Projects' href="#projects">My projects</a>
-      <a class='sideBarOption photos' href="#gallery" title='Photos'>My photos</a>
-      <a class='sideBarOption contact' title='contact' href="#social">Contact</a>
-      <a class='sideBarOption home' title='Home' href="#index">Home</a>
-    </nav>
 
 
-    <section id='curriculum'>
-      <h1>Kennedy Alves de Souza</h1>
-      <h2>Dados Pessoais</h2>
-      <p>Brasileiro, solteiro, 19 anos</p>
-      <p>Av. Sapopemba, km 28, Nº 28877</p>
-      <p>São Paulo – SP</p>
-      <p>CEP: 08330-180</p>
-      <p>E-mail: kennedy0064@gmail.com</p>
-      <p>Celular: (11) 96495-4234</p>
-      <p>Telefone: 27542160</p>
-      <h2>Aperfeiçoamento profissional</h2>
-      <p class='list'>Office 2010, MEGATOC</p>
-      <p class='list'>Windows 7, MEGATOC, EV Bradesco</p>
-      <p class='list'>Hardware, MEGATOC</p>
-      <p class='list'>HTML 5 e CSS 3, UNICID, EV Bradesco</p>
-      <p class='list'>JAVA Script, EV Bradesco</p>
-      <p class='list'>JAVA para Iniciantes, UNICID, 14 horas</p>
-      <p class='list'>Debug e Assembly, UNICID, 10 horas</p>
-      <p class='list'>Java web, UNICID</p>
-      <p class='list'>JSF com Prime Faces, UNICID</p>
-      <h2>Formação</h2>
-      <p>Cursando Análise e Desenvolvimento de Sistemas, UNICID (4º semestre), conclusão em 2017.</p>
-      <h2>Objetivo</h2>
-      <p>Estágio em desenvolvimento, análise, documentação ou teste de Sistemas.</p>
-      <h2>Experiência Profissional</h2>
-      <p class='list'>1 ano, Gráfica - Evidência, Auxiliar Geral</p>
-      <p class='list'>6 mesês, Barba Ervas, Vendedor</p>
+
+    <!-- about -->
+    <section id="about">
+      <div id='aboutText' class="content">
+        <h1>Sobre mim</h1>
+        <h4>Faz 3 anos anos que venho aprendendo a desenvolver sistemas, tenho me focado mais em web - HTML/CSS/JSF/BOOTSTRAP/PHP.</h4>
+        <h4>Também conheço um pouco de android, e JAVA SWING.</h4>
+        <h4>Curso análise e desenvolvimento de sistemas e estudo em inglês por conta própria. :)</h4>
+      </div>
+      <div id="aboutCourses" class='content'>
+        <h2>Aperfeiçoamento profissional</h2>
+        <p class='list'>Office 2010, MEGATOC</p>
+        <p class='list'>Windows 7, MEGATOC, EV Bradesco</p>
+        <p class='list'>Hardware, MEGATOC</p>
+        <p class='list'>HTML 5 e CSS 3, UNICID, EV Bradesco</p>
+        <p class='list'>JAVA Script, EV Bradesco</p>
+        <p class='list'>JAVA para Iniciantes, UNICID, 14 horas</p>
+        <p class='list'>Debug e Assembly, UNICID, 10 horas</p>
+        <p class='list'>Java web, UNICID</p>
+        <p class='list'>JSF com Prime Faces, UNICID</p>
+        <h2>Formação</h2>
+        <p>Cursando Análise e Desenvolvimento de Sistemas, UNICID (4º semestre), conclusão em 2017.</p>
+        <h2>Objetivo</h2>
+        <p>Estágio em desenvolvimento, análise, documentação ou teste de Sistemas.</p>
+        <h2>Experiência Profissional</h2>
+        <p class='list'>1 ano, Gráfica - Evidência, Auxiliar Geral</p>
+        <p class='list'>6 mesês, Barba Ervas, Vendedor</p>
+      </div>
     </section>
 
 
 
-    <section id='projects'>
-      <h1>Estes são alguns dos trabalhos que venho desenvolvendo ao longo dos anos:</h1>
+
+    <!-- contact -->
+    <section id="contact">
+      <div id='contactMail' class="content">
+        <h1>Fale comigo</h1>
+        <h4>kennedy0064@gmail.com</h4>
+        <h4>Cel: (11)99336-7023</h4>
+      </div>
+      <div id="contactMap" class='content'>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196726.57697767025!2d-46.42297912738519!3d-23.624136999867705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6f2f461bb693%3A0x7564745ea8b48205!2sAv.+Sapopemba%2C+28877+-+S%C3%A3o+Rafael%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1491776071413" width="100%" height="100vh" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+
+
+
+    <!-- trabalhos -->
+    <section id='jobs'>
+      <h1>Meus trabalhos</h1>
       <div id='photos'>
         <div>
           <img src="images/hp.png" class='image' alt="Hora de Provar - sistema web para gerar provas (PHP)"/>
@@ -101,38 +146,57 @@
           <span>Como eu gosto muito de games tentei modelar um carro :), o intuito era que ele fosse bem low poly mesmo (BLEDER)</span>
           <a class='download' href="https://drive.google.com/open?id=0B5GZ3iuwOQpLUExDcEFRZTVjQWM"></a>
         </div>
-
       </div>
     </section>
 
 
 
-
+    <!-- gallery -->
     <section id='gallery'>
-      <h1>Aqui eu coloco um pouco sobre mim, meus passeios e coisas que acho interssantes:</h1>
+      <h1>Eventos</h1>
       <div id='photos'>
-        <div><img src="images/1.jpg" class='image' alt=""/></div>
-        <div><img src="images/2.jpg" class='image' alt=""/></div>
-        <div><img src="images/3.jpg" class='image' alt=""/></div>
+        <div>
+          <img src="images/1.jpg" class='image' alt=""/>
+          <span>Visita ao CPD do Bradesco</span>
+        </div>
+        <div>
+          <img src="images/2.jpg" class='image' alt=""/>
+          <span>Depois das broncas</span>
+        </div>
+        <div>
+          <img src="images/3.jpg" class='image' alt=""/>
+          <span>Visita ao CPD do Bradesco</span>
+        </div>
       </div>
     </section>
 
 
+    <footer>
+      <span id="socialTitle">Fala comigo, eu sou legal :) </span>
 
-    <footer id='social'>
-      <h1>Fale comigo :) o seu feedback é muito importante</h1>
       <a href="intent://send/11993367023#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" title='Whatsapp (11)99336-7023' class='social whatsapp' target='_blank'></a>
       <a href="mailto:kennedy0064@gmail.com" title='E-mail' class='social email' target='_blank'></a>
       <a href="https://www.facebook.com/kennedy.alvesdesouza.3" title='Facebook' class='social facebook' target='_blank'></a>
       <a href="https://www.twitter.com/@kennedy00641" title='Twitter' class='social twitter' target='_blank'></a>
       <a href="https://www.instagram.com/kennedyalvesdesouza3/" title='Instagran' class='social instagran' target='_blank'></a>
       <a href="https://br.linkedin.com/in/kennedy-alves-de-souza-456558b8" title='Linkedin' class='social linkedin' target='_blank'></a>
-      <span id='info'>Front and Back end made by I _ Icons made by <a href="http://www.freepik.com" title="Freepik" target='_blank'> Freepik </a>
-        , <a href="http://www.flaticon.com/authors/google" title="Google">Google</a>
-        and <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>
-        from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
-        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"> CC 3.0 BY</a>
+
+      <span id='info'>Front and Back end made by I _ Icons made by <a href="http://www.freepik.com" class="link" title="Freepik" target='_blank'> Freepik </a>
+        from <a href="http://www.flaticon.com" class="link" title="Flaticon">www.flaticon.com</a> is licensed by
+        <a href="http://creativecommons.org/licenses/by/3.0/" class="link" title="Creative Commons BY 3.0" target="_blank"> CC 3.0 BY</a>
+        <a href="http://codepen.io/sergioandrade/" class="link" title="Sergio Andrade" target="_blank"> | Menu icon</a>
+        <a href="https://github.com/VincentGarreau/particles.js/" class="link" title="Sergio Andrade" target="_blank"> | Particles</a>
       </span>
     </footer>
+
+
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/prefix.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
   </body>
 </html>
