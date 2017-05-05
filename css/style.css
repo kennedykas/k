@@ -123,7 +123,7 @@ section{
   width: 100%;
   display: block;
   float: left;
-  line-height: 40px;
+  line-height: 35px;
 }
 .oppenned .sub-menu {
   opacity: 1;
@@ -277,8 +277,14 @@ h2{
 #contactMap{min-width: 65%}
 #map{
 	height: 100vh;
-	-webkit-filter: invert(100%); /* Safari */
-          filter: invert(100%);
+	-webkit-filter: invert(100%); /* Safari 
+          /*filter: invert(100%);*/
+	/*-webkit-filter: saturate(300%) /* Safari */*/
+	/*-webkit-filter: sepia(100%) /* Safari */*/
+
+	/*-webkit-filter: grayscale(50%);*/
+          /*filter: grayscale(100%);*/
+
 }
 
 
@@ -302,6 +308,7 @@ h2{
 
 /*              IMAGES               */
 img{width: 100%}
+.imgContainer{max-width: 650px}
 .image{transition: all ease .3s}
 .image:hover{
 	transition: all ease 0;
@@ -329,7 +336,7 @@ footer{
 	flex-flow: row wrap;
 	height: 15vh;
 	justify-content: center;
-	margin-bottom: 5vh;
+	margin-bottom: 40px;
 }
 #socialTitle{
 	width: 100%;
@@ -345,7 +352,7 @@ footer{
 	height: 50px;
 	margin: 0 10px 10px 0;
 	background-size: contain;
-	opacity: .1;
+	opacity: .4;
 	transition: all ease .9s;
 }
 .social:hover{opacity: 1}
