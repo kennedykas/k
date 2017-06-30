@@ -1,5 +1,5 @@
 /* My own reset css*/
-*{
+body,div,span,ul,li,a,section,h1,h2,h3,h4,h5,h6,p,progress,img,footer{
 	margin: 0;
   padding: 0;
   outline: none;
@@ -16,6 +16,8 @@
 	background-position: center;
 }
 
+@font-face { font-family: Quicksand; src: url('../fonts/Quicksand-Regular.ttf') }
+
 body{
 	color: #fff;
   background-color: #181818;
@@ -27,12 +29,13 @@ h1{
 	font-size: 34px;
 }
 
+
 /*          ITENS DE LISTA         */
 .list:before{
 	color: gold;
 	content: "• ";
-	margin-left: 12px;
 }
+.item,.list{margin-left: 12px}
 
 
 
@@ -53,6 +56,24 @@ section{
 	padding: 0 9% 0 9%;
 }
 
+
+
+
+/*            INDEX           */
+#index{padding-top: 25vh}
+#indexTitle{
+	font-size: 50px;
+	text-align: left;
+	width: 50vw;
+}
+#advantages{
+	font-size: 18px;
+	text-align: right
+}
+@media screen and (max-width: 500px){
+	#indexTitle {font-size: 34px}
+	#advantages {font-size: 15px}
+}
 
 
 
@@ -151,46 +172,6 @@ section{
 
 
 
-/*            BUTTONS          */
-.link:visited, .link{color: #3232ff}
-.link:hover{
-	background-color: rgba(50, 50, 255, .2);
-	padding: 15px 0 15px 0;
-	transition: all ease .2s;
-}
-.download:before{content: "download"}
-.download:visited, .download{color: #7CFC00}
-.download:hover{
-	background-color: rgba(50, 200, 50, .2);
-	padding: 15px 0 15px 0;
-	transition: all ease .2s;
-}
-
-
-
-
-
-/*            INDEX           */
-#index{padding-top: 25vh}
-#indexTitle{
-	font-size: 50px;
-	text-align: left;
-	width: 50vw;
-}
-#advantages{font-size: 18px}
-#advantages span:before{
-	color: gold;
-	content: "• ";
-	margin-left: 12px;
-}
-@media screen and (max-width: 500px){
-	#indexTitle {font-size: 34px}
-	#advantages {font-size: 15px}
-}
-
-
-
-
 /*        SKILLS       */
 #habilidades, #contact, #about{
 	display: flex;
@@ -216,9 +197,6 @@ section{
 	#habilidadesText {padding: 0}
 }
 progress[value]{
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   border: none;
 	border-radius: 15px;
   width: 80%;
@@ -249,6 +227,9 @@ progress[value]::-moz-progress-bar{
 
 
 
+
+
+
 /*            ABOUT             */
 #aboutText{
 	margin-bottom: 60px;
@@ -266,6 +247,30 @@ h2{
 
 
 
+
+
+/*            BUTTONS          */
+.link:visited, .link{color: #3232ff}
+.link:hover{
+	background-color: rgba(50, 50, 255, .2);
+	padding: 15px 0 15px 0;
+	transition: all ease .2s;
+}
+.download:before{content: "download"}
+.download:visited, .download{color: #7CFC00}
+.download:hover{
+	background-color: rgba(50, 200, 50, .2);
+	padding: 15px 0 15px 0;
+	transition: all ease .2s;
+}
+
+
+
+
+
+
+
+
 /*          CONTATO            */
 #contact{padding: 0}
 #contactMail{
@@ -276,14 +281,8 @@ h2{
 #contactMap{min-width: 65%}
 #map{
 	height: 100vh;
-	-webkit-filter: invert(100%); /* Safari
-          /*filter: invert(100%);*/
-	/*-webkit-filter: saturate(300%) /* Safari */*/
-	/*-webkit-filter: sepia(100%) /* Safari */*/
-
-	/*-webkit-filter: grayscale(50%);*/
-          /*filter: grayscale(100%);*/
-
+	-webkit-filter: invert(100%); /* Safari */
+          filter: invert(100%);
 }
 
 
@@ -291,11 +290,11 @@ h2{
 
 
 /* estilos para as fotos and projects */
-#photos{
+.photos{
 	display: flex;
 	flex-flow: row wrap;
 }
-#photos div{
+.photos div{
 	flex: auto;
 	width: 300px;
 	margin: .5vw;
@@ -309,10 +308,7 @@ h2{
 img{width: 100%}
 .imgContainer{max-width: 650px}
 .image{transition: all ease .3s}
-.image:hover{
-	transition: all ease 0;
-	transform: scale(1.2);
-}
+.image:hover{transform: scale(1.2)}
 .imgViewer{
 	transition: all ease 2s;
 	position: fixed;
