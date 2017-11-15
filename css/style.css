@@ -1,40 +1,40 @@
+﻿@font-face { font-family: Quicksand; src: url('../fonts/Quicksand-Regular.ttf') }
+
 /* My own reset css*/
 body,div,span,ul,li,a,section,h1,h2,h3,h4,h5,h6,p,progress,img,footer{
-	margin: 0;
+  margin: 0;
   padding: 0;
   outline: none;
-	border: none;
+  border: none;
   text-decoration: none;
   box-sizing: border-box;
-	user-drag: none;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	background-repeat: no-repeat;
-	background-position: center;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
-@font-face { font-family: Quicksand; src: url('../fonts/Quicksand-Regular.ttf') }
 
 body{
-	color: #fff;
+  color: #fff;
   background-color: #181818;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 1.1em;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1em;
 }
 h1{
-	margin-bottom: 60px;
-	font-size: 34px;
+  margin-bottom: 60px;
+  font-size: 34px;
 }
 
 
 
 /*          ITENS DE LISTA         */
 .list:before{
-	color: gold;
-	content: "• ";
+  color: gold;
+  content: "• ";
 }
 .item,.list{margin-left: 12px}
 
@@ -42,9 +42,9 @@ h1{
 
 
 /*       PARTICLES      */
-#particles-js{
-	width: 100%;
-	height: 100%;
+.background {
+  width: 100%;
+  height: 100%;
   position: fixed;
   z-index: -1;
 }
@@ -52,28 +52,28 @@ h1{
 
 
 section{
-	min-height: 100vh;
-	margin-bottom: 100px;
-	padding: 0 9% 0 9%;
+  min-height: 90vh;
+  margin-bottom: 100px;
+  padding: 0 9% 0 9%;
 }
 
 
 
 
 /*            INDEX           */
-#index{padding-top: 25vh}
+#index{padding-top: 30vh}
 #indexTitle{
-	font-size: 50px;
-	text-align: left;
-	width: 50vw;
+  font-size: 50px;
+  text-align: left;
+  width: 50vw;
 }
 #advantages{
-	font-size: 18px;
-	text-align: right
+  font-size: 18px;
+  text-align: right
 }
 @media screen and (max-width: 500px){
-	#indexTitle {font-size: 34px}
-	#advantages {font-size: 15px}
+  #indexTitle {font-size: 34px}
+  #advantages {font-size: 15px}
 }
 
 
@@ -84,12 +84,12 @@ section{
   position: fixed;
   top: 40px;
   right: 50px;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 65px;
   display: block;
   cursor: pointer;
   transition: opacity 0.2s linear;
-	z-index: 5;
+  z-index: 5;
 }
 .open:hover {opacity: 0.8}
 .open span {
@@ -132,7 +132,7 @@ section{
   margin-right: -160px;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.sub-menu li:first-child {margin-top: 180px}
+.sub-menu li:first-child {margin-top: 200px}
 .sub-menu li:nth-child(1) {-webkit-transition-delay: 0.05s}
 .sub-menu li:nth-child(2) {-webkit-transition-delay: 0.10s}
 .sub-menu li:nth-child(3) {-webkit-transition-delay: 0.15s}
@@ -149,8 +149,8 @@ section{
 }
 .oppenned .sub-menu {
   opacity: 1;
-  height: 410px;
-  width: 390px;
+  height: 430px;
+  width: 410px;
 }
 .oppenned span:nth-child(2) {overflow: visible}
 .oppenned span:nth-child(1), .oppenned span:nth-child(3) {
@@ -159,8 +159,8 @@ section{
 }
 .oppenned span:nth-child(1) {transform: rotate(45deg) translateY(12px) translateX(12px)}
 .oppenned span:nth-child(2) {
-  height: 400px;
-  width: 400px;
+  height: 420px;
+  width: 420px;
   right: -160px;
   top: -160px;
   border-radius: 50%;
@@ -175,31 +175,31 @@ section{
 
 /*        SKILLS       */
 #habilidades, #contact, #about{
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 .content{
-	flex: auto;
-	width: 300px;
+  flex: auto;
+  width: 300px;
 }
 #habilidadesText {
-	min-width: 50%;
-	padding: 0 10% 0 0;
-	text-align: justify;
-	margin-bottom: 60px;
+  min-width: 50%;
+  padding: 0 10% 0 0;
+  text-align: justify;
+  margin-bottom: 60px;
 }
 #skills{
-	min-width: 50%;
-	padding: 0 0 0 10%;
+  min-width: 50%;
+  padding: 0 0 0 10%;
 }
 @media screen and (max-width: 500px){
-	#habilidadesText {padding: 0}
+  #habilidadesText {padding: 0}
 }
 progress[value]{
   border: none;
-	border-radius: 15px;
+  border-radius: 15px;
   width: 80%;
   height: 20px;
 }
@@ -210,9 +210,9 @@ progress[value]::-webkit-progress-bar{
 }
 progress[value]::-webkit-progress-value{
   background-image:
-		-webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%),
-	  -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)),
-		-webkit-linear-gradient(left, #09c, #f44);
+    -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)),
+    -webkit-linear-gradient(left, #09c, #f44);
   border-radius: 15px;
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
@@ -233,15 +233,15 @@ progress[value]::-moz-progress-bar{
 
 /*            ABOUT             */
 #aboutText{
-	margin-bottom: 60px;
-	text-align: justify;
-	padding-right: 15%;
+  margin-bottom: 60px;
+  text-align: justify;
+  padding-right: 15%;
 }
 #aboutCourses{min-width: 50%}
 @media screen and (max-width: 720px){#aboutText{padding: 0}}
 h2{
-	border-bottom: 1px solid gray;
-	margin: 10px 0 15px 0;
+  border-bottom: 1px solid gray;
+  margin: 10px 0 15px 0;
 }
 
 
@@ -253,16 +253,16 @@ h2{
 /*            BUTTONS          */
 .link:visited, .link{color: #3232ff}
 .link:hover{
-	background-color: rgba(50, 50, 255, .2);
-	padding: 15px 0 15px 0;
-	transition: all ease .2s;
+  background-color: rgba(50, 50, 255, .2);
+  padding: 15px 0 15px 0;
+  transition: all ease .2s;
 }
 .download:before{content: "download"}
 .download:visited, .download{color: #7CFC00}
 .download:hover{
-	background-color: rgba(50, 200, 50, .2);
-	padding: 15px 0 15px 0;
-	transition: all ease .2s;
+  background-color: rgba(50, 200, 50, .2);
+  padding: 15px 0 15px 0;
+  transition: all ease .2s;
 }
 
 
@@ -275,15 +275,15 @@ h2{
 /*          CONTATO            */
 #contact{padding: 0}
 #contactMail{
-	margin-bottom: 60px;
-	text-align: center;
-	min-width: 20%;
+  margin-bottom: 60px;
+  text-align: center;
+  min-width: 20%;
 }
 #contactMap{min-width: 65%}
 #map{
-	height: 100vh;
-	-webkit-filter: invert(100%); /* Safari */
-          filter: invert(100%);
+  height: 100vh;
+  -webkit-filter: invert(100%); /* Safari */
+  filter: invert(100%);
 }
 
 
@@ -292,13 +292,13 @@ h2{
 
 /* estilos para as fotos and projects */
 .photos{
-	display: flex;
-	flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 .photos div{
-	flex: auto;
-	width: 300px;
-	margin: .5vw;
+  flex: auto;
+  width: 300px;
+  margin: .5vw;
 }
 
 
@@ -311,15 +311,15 @@ img{width: 100%}
 .image{transition: all ease .3s}
 .image:hover{transform: scale(1.2)}
 .imgViewer{
-	transition: all ease 2s;
-	position: fixed;
-	top: 12vh;
-	left: 14vw;
-	max-width: 70vw;
-	max-height: 80vh;
-	-webkit-box-shadow: 2px 13px 155px 127px rgba(0,0,0,1);
-	-moz-box-shadow: 2px 13px 155px 127px rgba(0,0,0,1);
-	box-shadow: 2px 13px 155px 127px rgba(0,0,0,1);
+  transition: all ease 2s;
+  position: fixed;
+  top: 12vh;
+  left: 14vw;
+  max-width: 70vw;
+  max-height: 80vh;
+  -webkit-box-shadow: 2px 13px 155px 127px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 13px 155px 127px rgba(0,0,0,1);
+  box-shadow: 2px 13px 155px 127px rgba(0,0,0,1);
 }
 
 
@@ -328,30 +328,30 @@ img{width: 100%}
 
 /*           Footer          */
 footer{
-	display: flex;
-	flex-flow: row wrap;
-	height: 15vh;
-	justify-content: center;
-	margin-bottom: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  height: 15vh;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 #socialTitle{
-	width: 100%;
-	height: 40px;
-	text-align: center;
-	color: #2e3c50;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: #2e3c50;
 }
 /* definition for each icon */
 .social{
-	flex: 1 1;
-	min-width: 50px;
-	max-width: 50px;
-	height: 50px;
-	margin: 0 10px 10px 0;
-	background-size: contain;
-	background: url('../images/icons/0.png');
-	background-repeat: no-repeat;
-	opacity: .3;
-	transition: all ease .9s;
+  flex: 1 1;
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  margin: 0 10px 10px 0;
+  background-size: contain;
+  background: url('../images/icons/0.png');
+  background-repeat: no-repeat;
+  opacity: .3;
+  transition: all ease .9s;
 }
 .social:hover{opacity: 1}
 
@@ -362,8 +362,8 @@ footer{
 .linkedin{background-position: -200px 0}
 
 #info{
-	width: 90%;
-	font-size: .8em;
-	color: #2e3c50;
-	text-align: center;
+  width: 90%;
+  font-size: .8em;
+  color: #2e3c50;
+  text-align: center;
 }
