@@ -20,10 +20,11 @@ body,div,span,ul,li,a,section,h1,h2,h3,h4,h5,h6,p,progress,img,footer{
 
 body{
   color: #fff;
-  background-color: #181818;
+  background-color: #000;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1em;
 }
+
 h1{
   margin-bottom: 60px;
   font-size: 34px;
@@ -33,8 +34,9 @@ h1{
 
 /*          ITENS DE LISTA         */
 .list:before{
-  color: gold;
-  content: "• ";
+  color: #09c;
+  content: "_ ";
+
 }
 .item,.list{margin-left: 12px}
 
@@ -42,11 +44,17 @@ h1{
 
 
 /*       PARTICLES      */
+.background-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 .background {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
 }
 
 
@@ -61,17 +69,27 @@ section{
 
 
 /*            INDEX           */
-#index{padding-top: 30vh}
-#indexTitle{
+#index { padding-top: 30vh }
+
+#indexTitle {
   font-size: 50px;
   text-align: left;
   width: 50vw;
 }
-#advantages{
+
+#advantages {
   font-size: 18px;
-  text-align: right
+  text-align: right;
+  float: right;
+  text-align: left;
 }
-@media screen and (max-width: 500px){
+
+#advantages .list:before {
+  color: #f44;
+  content: "> ";
+}
+
+@media screen and (max-width: 500px) {
   #indexTitle {font-size: 34px}
   #advantages {font-size: 15px}
 }
@@ -279,6 +297,7 @@ h2{
   text-align: center;
   min-width: 20%;
 }
+
 #contactMap{min-width: 65%}
 #map{
   height: 100vh;
@@ -333,12 +352,6 @@ footer{
   height: 15vh;
   justify-content: center;
   margin-bottom: 40px;
-}
-#socialTitle{
-  width: 100%;
-  height: 40px;
-  text-align: center;
-  color: #2e3c50;
 }
 /* definition for each icon */
 .social{
