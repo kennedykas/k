@@ -312,12 +312,22 @@ h2{
 /* estilos para as fotos and projects */
 .photos{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  height: 690px;
+}
+@media screen and (max-width: 720px){
+  .photos{
+    flex-direction: row;
+    height: auto;
+  }
 }
 .photos div{
   flex: auto;
   width: 300px;
   margin: .5vw;
+}
+@media screen and (max-width: 720px){
+  .photos div{margin-bottom: 30px}
 }
 
 
